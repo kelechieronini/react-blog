@@ -1,13 +1,136 @@
-body {
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #fff;
+  background-color: #2b3452;
+}
+ 
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 2px solid #bc4123;
+}
+.navbar h1 {
+  color: #fff;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar a.active
+
+.navbar a:hover {
+  color: #bc4123;
 }
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* blog previewwa / list */
+
+.blog-preview{
+  padding: 10px 16px;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.blog-preview h2{
+  font-size: 20px;
+  color: #bc4123;
+  margin-bottom: 9px;
+}
+
+.blog-preview button{
+  padding: 0.6rem;
+  margin-top: 0.6rem;
+  border: none;
+  border-radius: 20px;
+  background: #bc4123;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.blog-preview button:hover{
+  padding: 0.8rem;
+  transition: 0.2s;
+}
+
+.blog-preview a{
+  text-decoration: none;
+}
+
+/* Blogs details page */
+.blog-dets h1{
+  color: #bc4123;
+  margin-bottom: 20px;
+}
+
+.blog-dets div{
+  margin: 20px 0;
+}
+
+
+/* CREATE NEW BLOG */
+.create{
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create label{
+  text-align: left;
+  display: block;
+}
+
+.create h2{
+  font-size: 20px;
+  color: #bc4123;
+  margin-bottom: 30px;
+}
+
+.create input, .create textarea, .create select{
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.create button{
+  background: #bc4123;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+

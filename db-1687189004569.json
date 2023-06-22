@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "My first Blog",
+      "body": "Why does everyone use it? \n It is a long established fact that the reader will be distracted",
+      "author": "Kelechi",
+      "id": 1
+    },
+    {
+      "title": "Dinner Party!",
+      "body": "Why does everyone use it? \n It is a long established fact that the reader will be distracted",
+      "author": "Kelechi",
+      "id": 2
+    },
+    {
+      "title": "My first Blog",
+      "body": "Why does everyone use it? \n It is a long established fact that the reader will be distracted",
+      "author": "Kelechi",
+      "id": 3
+    }
+  ]
+}
