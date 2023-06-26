@@ -1,11 +1,12 @@
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
 import useFetch from "./useFetch";
+import Confirm from "./Confirm";
+import { useState } from "react";
 
 const BlogDetails = () => {
-
   const { id } = useParams();
-  const {blogs, isPending} = useFetch("http://localhost:8000/blogs/" +id)
+  const { blogs, isPending } = useFetch("http://localhost:8000/blogs/" + id);
+  const [confirmContainer, setConfirmContainer] = useState(false);
 
   return (
     <div className="blog-dets">
@@ -15,6 +16,10 @@ const BlogDetails = () => {
           <h1>{blogs.title}</h1>
           <p>Written by {blogs.author}</p>
           <div>{blogs.body}</div>
+          <button onClick={() => setConfirmContainer(true)}>Delete blog</button>
+          {confirmContainer && (
+            <Confirm setConfirmContainer={setConfirmContainer} />
+          )}
         </article>
       )}
     </div>

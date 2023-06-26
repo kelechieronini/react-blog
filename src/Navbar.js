@@ -8,11 +8,7 @@ const Navbar = () => {
         <NavLink to="/">Home</NavLink>
         <NavLink
           to="/create"
-          style={{
-            color: "white",
-            background: "#bc4123",
-            borderRadius: "15px",
-          }}
+
         >
           New Blog
         </NavLink>

@@ -34,7 +34,9 @@
   padding: 6px;
 }
 
-.navbar a.active
+nav.navbar a.active{
+  color: #bc4123;
+}
 
 .navbar a:hover {
   color: #bc4123;
@@ -56,7 +58,6 @@
 .blog-preview:hover{
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
   transition: 0.3s;
-  cursor: pointer;
 }
 
 .blog-preview h2{
@@ -95,6 +96,23 @@
   margin: 20px 0;
 }
 
+.blog-dets button{
+  padding: 0.6rem;
+  margin-top: 0.6rem;
+  border: none;
+  border-radius: 20px;
+  background: #bc4123;
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.blog-dets button:hover{
+  padding: 0.8rem;
+  transition: 0.2s;
+}
+
+
 
 /* CREATE NEW BLOG */
 .create{
@@ -131,6 +149,63 @@
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+  transition: 0.2s;
 }
 
+.create button:hover{
+  padding: 0.8rem;
+  transition: 0.2s;
+}
+
+/* Confirm page */
+
+
+.confirm-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.confirm p {
+  text-align: center;
+}
+
+.confirm {
+  background: #2b3452;
+  padding: 40px;
+  border-radius: 1rem;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+
+.ask {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+.yes {
+  padding: 1rem 1.3rem !important;
+  border-radius: 0.5rem;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.no {
+  padding: 1rem 1.3rem !important;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
 
