@@ -14,7 +14,12 @@ const useFetch = (url) => {
             .then((data) => {
               setBlogs(data);
               setIsPending(false);
-            });
+              localStorage.setItem("jsonData", JSON.stringify(data));
+            })
+            .catch((error) =>{
+              console.error("Error fetching JSON file:", error);
+            })
+            ;
         }, 1000);
       }, [url]);
 
