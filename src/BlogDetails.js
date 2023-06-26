@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const BlogDetails = () => {
   const { id } = useParams();
-  const { blogs, isPending } = useFetch("http://localhost:8000/blogs/" + id);
+  const { blogs, isPending } = useFetch("https://github.com/kelechieronini/react-blog/blob/main/data/db.json/" + id);
   const [confirmContainer, setConfirmContainer] = useState(false);
 
   return (

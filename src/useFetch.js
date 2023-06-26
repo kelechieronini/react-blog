@@ -5,16 +5,22 @@ const useFetch = (url) => {
     const [blogs, setBlogs] = useState(null);
     const [isPending, setIsPending] = useState(true);
 
+
     useEffect(() => {
+
+
+
         setTimeout(() => {
           fetch(url)
             .then((res) => {
               return res.json();
             })
             .then((data) => {
+              localStorage.setItem("jsonData", JSON.stringify(data));
               setBlogs(data);
               setIsPending(false);
-              localStorage.setItem("jsonData", JSON.stringify(data));
+
+              
             })
             .catch((error) =>{
               console.error("Error fetching JSON file:", error);
