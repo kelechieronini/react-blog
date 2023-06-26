@@ -1,17 +1,8 @@
-import { useState } from "react";
 import BlogList from "./BlogList";
-import { useEffect } from "react";
 import useFetch from "./useFetch";
 
 const Home = () => {
-  const {blogs, isPending} = useFetch("http://localhost:8000/blogs")
-
-  // const handleDelete = (id) => {
-  //   const newBlogs = blogs.filter((blog) => blog.id !== id);
-  //   setBlogs(newBlogs);
-  // };
- 
-// where the use effect was before
+  const { blogs, isPending } = useFetch("http://localhost:8000/blogs");
 
   return (
     <div>
@@ -20,7 +11,7 @@ const Home = () => {
       )}
 
       {blogs && <BlogList blogs={blogs} />}
-    </div> 
+    </div>
   );
 };
 
